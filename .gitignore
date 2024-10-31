@@ -1,0 +1,34 @@
+# Carpetas generadas por Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+MemoryCaptures/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de Visual Studio / MonoDevelop
+.vscode/
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+
+# Ignorar paquetes cacheados
+Packages/com.unity.*/Editor/*.meta
+Packages/com.unity.*/Runtime/*.meta
