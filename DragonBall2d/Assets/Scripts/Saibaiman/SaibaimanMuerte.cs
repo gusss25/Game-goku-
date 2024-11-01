@@ -25,7 +25,7 @@ public class SaibaimanMuerte : MonoBehaviour
         {
             if (animator.GetBool("Dañando"))
             {
-                StopCoroutine(AnimHurtWolf());
+                StopCoroutine(AnimSaiDaño());
                 animator.SetBool("Dañando", false);
                 if (correr)
                 {
@@ -58,7 +58,7 @@ public class SaibaimanMuerte : MonoBehaviour
             else
             {
                 MoveSai.speed = 0f;
-                StartCoroutine(AnimHurtWolf());
+                StartCoroutine(AnimSaiDaño());
             }
         }
     }
@@ -67,26 +67,26 @@ public class SaibaimanMuerte : MonoBehaviour
     {
         if (animator.GetBool("Dañando") && collision.gameObject.CompareTag("Player"))
         {
-            StartCoroutine(AnimaDeathWolf());
+            StartCoroutine(MuerteSai());
         }
     }
 
-    IEnumerator AnimaDeathWolf()
+    IEnumerator MuerteSai()
     {
         animator.SetBool("Muriendo", true);
         boxCollider2D.enabled = false;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.6f);
         animator.SetBool("Muriendo", false);
         Destroy(gameObject);
     }
 
-    IEnumerator AnimHurtWolf()
+    IEnumerator AnimSaiDaño()
     {
 
         animator.SetBool("Walk", false);
         animator.SetBool("Iracundo", false);
         animator.SetBool("Dañando", true);
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(6f);
         animator.SetBool("Iracundo", true);
         correr = true;
         animator.SetBool("Dañando", false);
@@ -109,11 +109,11 @@ public class SaibaimanMuerte : MonoBehaviour
         if (!animator.GetBool("Dañando"))
         {
             MoveSai.speed = 0f;
-            StartCoroutine(AnimHurtWolf());
+            StartCoroutine(AnimSaiDaño());
         }
         else
         {
-            StopCoroutine(AnimHurtWolf());
+            StopCoroutine(AnimSaiDaño());
             animator.SetBool("Dañando", false);
             if (correr)
             {

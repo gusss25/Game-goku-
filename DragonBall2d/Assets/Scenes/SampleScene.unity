@@ -1811,7 +1811,7 @@ Transform:
   - {fileID: 1312067851}
   - {fileID: 616637919}
   m_Father: {fileID: 896531708}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &269982793
 GameObject:
@@ -4636,7 +4636,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845689099}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.0015, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4668,7 +4668,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.016681433, y: -0.20695102}
+  m_Offset: {x: 0.02507782, y: -0.20695102}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4679,7 +4679,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.27739096, y: 0.021283388}
+  m_Size: {x: 0.4023738, y: 0.021283388}
   m_EdgeRadius: 0
 --- !u!1 &886578591
 GameObject:
@@ -5204,6 +5204,7 @@ Transform:
   m_Children:
   - {fileID: 1921079996}
   - {fileID: 998350193}
+  - {fileID: 1947326834}
   - {fileID: 261170047}
   m_Father: {fileID: 1548398489}
   m_RootOrder: 0
@@ -5560,8 +5561,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 928576661}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.76, y: -2.58, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -3.757, y: -2.58, z: 0}
+  m_LocalScale: {x: 0.9906, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 845689100}
@@ -5667,7 +5668,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1c750d477c3f5a34cad23be77f481b77, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.33
+  m_Volume: 0.43
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5778,7 +5779,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 934066499}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6adbec8c5b7e40e4da80979aaae54802, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -6417,8 +6418,8 @@ Transform:
   - {fileID: 185708602}
   - {fileID: 1333536197}
   - {fileID: 934066502}
+  - {fileID: 1662917649}
   - {fileID: 1573626195}
-  - {fileID: 1947326834}
   m_Father: {fileID: 896531708}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9854,7 +9855,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1573626192}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6adbec8c5b7e40e4da80979aaae54802, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -9936,7 +9937,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 998350193}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1 &1590620108
 GameObject:
@@ -10454,8 +10455,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 526472904}
-  m_Father: {fileID: 1947326834}
-  m_RootOrder: 9
+  m_Father: {fileID: 998350193}
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1668726647
 GameObject:
@@ -10655,7 +10656,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 07382036b7b5dbc47ae290ff8f6b6813, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.34
+  m_Volume: 0.24
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -11783,7 +11784,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947326833}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11796,9 +11797,8 @@ Transform:
   - {fileID: 921929626}
   - {fileID: 1431009352}
   - {fileID: 1758388073}
-  - {fileID: 1662917649}
-  m_Father: {fileID: 998350193}
-  m_RootOrder: 20
+  m_Father: {fileID: 896531708}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1948508607
 GameObject:

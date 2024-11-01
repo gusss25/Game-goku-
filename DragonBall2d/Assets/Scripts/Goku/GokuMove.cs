@@ -98,7 +98,7 @@ public class GokuMove : MonoBehaviour
         }
 
 
-        
+
         if (!VerificarSalto.esSuelo)
         {
             animator.SetBool("Walking", false);
